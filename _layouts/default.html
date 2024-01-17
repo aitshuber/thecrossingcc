@@ -1,0 +1,27 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <title>The Crossing at Mervine Kahn</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="The Crossing at Mervine Kahn"
+          content="We offer space for large and small wedding ceremonies and receptions, corporate events and small parties! WE offer the most delectable catering and also have a full service bar!">
+    {% include head.html %}
+</head>
+<body class=" ">
+<a id="start"></a>
+<div class="nav-container ">
+    {% include nav.html %}
+</div>
+    <div class="main-container">
+        {{content}}
+    </div>
+{% include footer.html %}
+<!--<div class="loader"></div>-->
+<a class="back-to-top inner-link" href="#start" data-scroll-class="100vh:active">
+    <i class="fa fa-arrow-up"></i>
+</a>
+{% include scripts.html %}
+
+</body>
+</html>
