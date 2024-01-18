@@ -57,8 +57,8 @@ permalink: /
                 </span>
                 <hr class="short">
                 <p>
-                    113 East Louisiana Ave. Rayne, LA
-                    <br class="hidden-xs hidden-sm" /> <a href="tel:3372074600" class="phone">(337) 393 2416</a>
+                  {{site.data.company_details.address}}
+                    <br class="hidden-xs hidden-sm" /> <a href="tel:{{site.data.company_details.phone}}" class="phone">{{site.data.company_details.phone}}</a>
                 </p>
             </div>
         </div>
@@ -401,13 +401,12 @@ permalink: /
             </div>
 
             <div class="col-md-5 col-sm-7">
-                <h3>113 East Louisiana Ave
-                    <br />Rayne, Louisiana
+                <h3><address>{{site.data.company_details.address}}</address>
                 </h3>
                 <p class="lead">
                     E:
-                    <a href="mailto:erincrossingmk@yahoo.com">erincrossingmk@yahoo.com</a>
-                    <br /> P: <a href="tel:3372074600" class="phone">(337) 207 4600</a>
+                    <a href="mailto:{{site.data.company_details.email}}">{{site.data.company_details.email}}</a>
+                    <br /> P: <a href="tel:{{site.data.company_details.phone}}" class="phone">{{site.data.company_details.phone}}</a>
                 </p>
                 <p class="lead">
                     Give us a call or drop by anytime, we endeavour to answer all enquiries within 24 hours on
@@ -431,7 +430,7 @@ permalink: /
                     <h2>Follow us for updates and more</h2>
                 </div>
                 <div class="instafeed" data-user-name="thecrossingmk" data-amount="6" data-grid="6"></div>
-                <a class="btn btn--icon bg--instagram type--uppercase" href="https://www.instagram.com/thecrossingmk/">
+                <a class="btn btn--icon bg--instagram type--uppercase" href="{{site.data.company_details.social[0].link}}">
                     <span class="btn__text">
                         <i class="socicon socicon-instagram"></i>
                         Follow @thecrossingmk

@@ -1,4 +1,9 @@
 /*! Place your custom styles here */
+#calendar {
+  max-width: 900px;
+  margin: 0 auto;
+}
+
 .red{
 	color: #a94442;
 }

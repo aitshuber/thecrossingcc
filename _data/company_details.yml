@@ -1,23 +1,15 @@
-email: info@scoutrec.com
-phone: (337) 443-0880
-Addresses:
-  - address: 905 Jefferson St.
-    address2: Suite 504
-    city-state-zip: Lafayette, LA 70501
-  - address: P.O. Box 51125
-    address2:
-    city-state-zip: Lafayette, LA 70505
-logo_image: /assets/svg/logos/SCOUT-WEBSITE-MAIN-LOGO (1).png
+email: "erincrossingmk@yahoo.com"
+phone: (337) 207 4600
+address: 113 East Louisiana Ave Rayne, Louisiana 70578
+logo_image: /static/thecrossing/images/The-Crossing-Logo-white.png
 social:
   - name: Instagram
-    link: https://instagram.com/scoutrealestateco
+    link: https://instagram.com/thecrossingmk
     icon: instagram
   - name: Facebook
-    link: https://facebook.com/scoutrealestateco
+    link: https://facebook.com/thecrossingatmk
     icon: facebook
-  - name: Youtube
-    link: https://www.youtube.com/channel/UCnEJTuCvF082zAAjpeasQIA
-    icon: youtube
-  - name: LinkedIn
-    link: https://www.linkedin.com/company/scout-real-estate-co/
-    icon: linkedin
+  - name: Google
+    link: https://maps.app.goo.gl/uwxs8WL5nR598kc6A
+    icon: google
+
