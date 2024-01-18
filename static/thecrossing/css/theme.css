@@ -963,7 +963,7 @@ div[data-overlay] ul {
   color: #fff;
 }
 .btn--primary:hover {
-  background: #609de6;
+  background: #8d3b3a;
 }
 .btn--primary:active {
   background: #3483de;
@@ -4207,7 +4207,7 @@ a {
   font-weight: 700;
 }
 a:hover {
-  color: #2275d7;
+  color: #8d3b3a;
   text-decoration: underline;
 }
 a.block {

@@ -13,7 +13,10 @@ page_banner:
       button_link: /
       button_text: Call to Schedule
       background_image: ../media/web_app_images/forms/4.jpg
-services_image: /uploads/214jefferson-72.jpg
+image_slider: 
+        - image: ../static/thecrossing/images/4.jpg
+        - image: ../static/thecrossing/images/1.jpg
+        - image: ../static/thecrossing/images/2.jpg
 permalink: /
 ---
 <section id="home" class="cover height-100 imagebg parallax slider" data-arrows="true" data-paging="true">
@@ -83,7 +86,7 @@ permalink: /
     <!--end of container-->
 </section>
 <!--Food-->
-<section>
+ <section>
     <div class="container">
         <div class="row">
             <div class="col-md-4">
@@ -91,57 +94,33 @@ permalink: /
                     <h3 class="red">Hor d'oeuvres </h3>
                 </div>
             </div>
-            <div class="col-md-4">
-                <div class="text-block">
-                    <h4>Boudin <label style="font-size: 13px; font-weight: 600; color: #a94442">Hot</label>
-                    </h4>
-                    <p>
-
-                    </p>
-                </div>
-            </div>
-            <div class="col-md-4">
-                <div class="text-block">
-                    <h4>Louisiana Meat Pies <label style="font-size: 13px; font-weight: 600; color: #a94442">Hot</label>
-                    </h4>
-                    <p>
-
-                    </p>
-                </div>
-            </div>
-            <div class="col-md-4">
-                <div class="text-block">
-                    <h4>Fried Catfish Strips <label style="font-size: 13px; font-weight: 600; color: #a94442">Hot</label>
-                    </h4>
-                    <p>
-
-                    </p>
-                </div>
-            </div>
-
-            <div class="col-md-4">
-                <div class="text-block">
-                    <h4>Shrimp Cocktail <label style="font-size: 13px; font-weight: 600; color: #a94442">Cold</label>
-                    </h4>
-                    <p>
-
-                    </p>
-                </div>
-            </div>
-            <div class="col-md-4">
-                <div class="text-block">
-                    <h4>Marinated Crab Claws <label style="font-size: 13px; font-weight: 600; color: #a94442">Cold</label>
-                    </h4>
-                    <p>
-
-                    </p>
-                </div>
-            </div>
+            {% assign counter1 = 0 %}
+               {% for item in site.data.menu %}
+                {% if item.category == "Hor d'oeuvres" %}
+                {% assign counter1 = counter1 | plus: 1 %}
+                {% if counter1 < 4 %}
+                    <div class="col-md-4">
+                        <div class="text-block">
+                            <h4>{{item.title}} <label
+                                    style="font-size: 13px; font-weight: 600; color: #a94442">{{item.label}}</label></h4>
+                            <p>
+                                
+                            </p>
+                        </div>
+                    </div>
+                    {% endif %}
+                    {% endif %}
+                {% endfor %}
+            
+             
+            
         </div>
         <!--end of row-->
     </div>
     <!--end of container-->
 </section>
+
+
 <section>
     <div class="container">
         <div class="row">
@@ -150,40 +129,64 @@ permalink: /
                     <h3 class="red">Stations</h3>
                 </div>
             </div>
-            <div class="col-md-4">
-                <div class="text-block">
-                    <h4>Potato Bar</h4>
-                    <p>
 
-                    </p>
-                </div>
-            </div>
+            {% assign counter2 = 0 %}
+                {% for item in site.data.menu %}
+                {% if item.category == "Stations" %}
+                {% assign counter2 = counter2 | plus: 1 %}
+                {% if counter2 < 3 %}
+                    <div class="col-md-4">
+                        <div class="text-block">
+                            <h4>{{item.title}}</h4>
+                            <p>
+                                
+                            </p>
+                        </div>
+                    </div>
+                    {% endif %}
+                {% endif %}
+                {% endfor %}
+            
+            
         </div>
         <!--end of row-->
     </div>
     <!--end of container-->
 </section>
+
 <section>
     <div class="container">
         <div class="row">
+            
             <div class="col-md-4">
                 <div class="text-block">
                     <h3 class="red">Vegetable, Fruit, Sandwich and Cheese Trays</h3>
                 </div>
             </div>
-            <div class="col-md-4">
-                <div class="text-block">
-                    <h4>Cheese and Pickle</h4>
-                    <p>
-
-                    </p>
-                </div>
-            </div>
+            {% assign counter3 = 0 %}
+            {% for item in site.data.menu %}
+            {% if item.category == "Trays" %}
+            {% assign counter3 = counter3 | plus: 1 %}
+            {% if counter3 < 5 %}
+                    <div class="col-md-4">
+                        <div class="text-block">
+                            <h4>{{item.title}}</h4>
+                            <p>
+                                
+                            </p>
+                        </div>
+                    </div>
+                {% endif %}
+            {% endif %}
+            {% endfor %}
+                
+            
         </div>
         <!--end of row-->
     </div>
     <!--end of container-->
 </section>
+
 <section>
     <div class="container">
         <div class="row">
@@ -192,21 +195,32 @@ permalink: /
                     <h3 class="red">Soups, Gumbo, Dips and Salads</h3>
                 </div>
             </div>
-
-            <div class="col-md-4">
-                <div class="text-block">
-                    <h4>Seafood Gumbo</h4>
-                    <p>
-
-                    </p>
-                </div>
-            </div>
-
+            {% assign counter4 = 0 %}
+            {% for item in site.data.menu %}
+            {% if item.category == "Soup, Salads, and Dips" %}
+               {% assign counter4 = counter4 | plus: 1 %}
+               {% if counter4 < 6 %}
+                    <div class="col-md-4">
+                        <div class="text-block">
+                            <h4>{{item.title}}</h4>
+                            <p>
+                                
+                            </p>
+                        </div>
+                    </div>
+                    {% endif %}
+                {% endif %}
+                {% endfor %}
+            
+                
+            
         </div>
         <!--end of row-->
     </div>
     <!--end of container-->
 </section>
+
+
 <section>
     <div class="container">
         <div class="row">
@@ -215,14 +229,23 @@ permalink: /
                     <h3 class="red">Entree</h3>
                 </div>
             </div>
-            <div class="col-md-4">
-                <div class="text-block">
-                    <h4>Beef or Pork Roast</h4>
-                    <p>
-
-                    </p>
-                </div>
-            </div>
+            {% assign counter5 = 0 %}
+                {% for item in site.data.menu %}
+                {% if item.category == "Entree" %}
+                {% assign counter5 = counter5 | plus: 1 %}
+                   {% if counter5 < 6 %}
+                    <div class="col-md-4">
+                        <div class="text-block">
+                            <h4>{{item.title}}</h4>
+                            <p>
+                                
+                            </p>
+                        </div>
+                    </div>
+                    {% endif %}
+                {% endif %}
+                {% endfor %}
+            
         </div>
         <!--end of row-->
     </div>
@@ -231,7 +254,7 @@ permalink: /
 <section>
     <div class="container">
         <div class="col-md-12 text-center">
-            <a class="btn btn--primary type--uppercase inner-link" href="food/index.html">
+            <a class="btn btn--primary type--uppercase inner-link" href="/food" title="Full Menu For The Crossing at Mervine Kahn">
                 <span class="btn__text">
                     View our full menu
                 </span>
@@ -261,13 +284,13 @@ permalink: /
         <div class="row">
             <div class="col-md-4">
                 <div class="text-block">
-                    <h3 class="red">Cold Drinks/No Liquor</h3>
+                    <h3 class="red editable">Cold Drinks/No Liquor</h3>
                 </div>
             </div>
             <div class="col-md-4">
                 <div class="text-block">
-                    <h4>Includes sodas, juices, and water</h4>
-                    <p>
+                    <h4 class="editable">Includes sodas, juices, and water</h4>
+                    <p class="editable">
                         Has the option of cash bar for all alcohol.
                     </p>
                 </div>
@@ -282,13 +305,13 @@ permalink: /
         <div class="row">
             <div class="col-md-4">
                 <div class="text-block">
-                    <h3 class="red">Beer/Wine</h3>
+                    <h3 class="red editable">Beer/Wine</h3>
                 </div>
             </div>
             <div class="col-md-4">
                 <div class="text-block">
-                    <h4>Includes 3 choices of beer and 3 choices of wine, sodas, juice, and water</h4>
-                    <p>
+                    <h4 class="editable">Includes 3 choices of beer and 3 choices of wine, sodas, juice, and water</h4>
+                    <p class="editable">
                         Also has the option for cash bar for mixed drinks or no mixed drinks at all.
                     </p>
                 </div>
@@ -303,12 +326,12 @@ permalink: /
         <div class="row">
             <div class="col-md-4">
                 <div class="text-block">
-                    <h3 class="red">Hard Liquor and Premium Liquor</h3>
+                    <h3 class="red editable">Hard Liquor and Premium Liquor</h3>
                 </div>
             </div>
             <div class="col-md-4">
                 <div class="text-block">
-                    <h4>Includes beer, wine, mixed drinks, sodas, juices, and water</h4>
+                    <h4 class="editable">Includes beer, wine, mixed drinks, sodas, juices, and water</h4>
                     <p>
                     </p>
                 </div>
@@ -320,15 +343,12 @@ permalink: /
 </section>
 <section class="slider" data-arrows="true" data-paging="true">
     <ul class="slides">
+        {% for item in page.image_slider %}
         <li>
-            <img alt="Image" src="static/thecrossing/images/4.jpg" />
+            <img alt="Image" src="{{item.image}}" />
         </li>
-        <li>
-            <img alt="Image" src="static/thecrossing/images/1.jpg" />
-        </li>
-        <li>
-            <img alt="Image" src="static/thecrossing/images/2.jpg" />
-        </li>
+        {% endfor %}
+       
     </ul>
 </section>
 <!--Contact Form-->
@@ -337,67 +357,7 @@ permalink: /
     <div class="container">
         <div class="row">
             <div class="col-sm-5 col-sm-offset-1">
-                <form id="contact-form" method="POST">
-                    <input type="hidden" name="csrfmiddlewaretoken" value="0vGwKW9X0CA0a1GJ6tnHNo1ROafJA5XwWGTZY35l8LRJWyo7B5yNFDd5fSfG1oLR">
-                    <div class="col-sm-12">
-                        <label>Your Name:</label>
-                        <input type="text" name="name" class="validate-required" required id="id_name">
-
-                    </div>
-                    <div class="col-sm-12">
-                        <label>Email Address:</label>
-                        <input type="email" name="email" class="validate-required" required id="id_email">
-
-                    </div>
-                    <div class="col-sm-12">
-                        <label>Message:</label>
-                        <textarea name="message" cols="40" rows="10" class="validate-required" required id="id_message">
-</textarea>
-
-                    </div>
-                    <div class="col-sm-12">
-                        <button style="transform: scale(1) !important;" type="submit" class="g-recaptcha btn btn--primary" data-sitekey="6LfEwN4aAAAAAMw194_tDMZQAejUljCSjirX0rdT" data-callback="submitContactForm" id="form-button">Send Form
-                        </button>
-                    </div>
-                </form>
-                <script>
-                    function submitContactForm(event) {
-                        var form = new FormData(document.getElementById('contact-form'));
-                        $.ajax({
-                            headers: {
-                                'X-CSRFTOken': '0vGwKW9X0CA0a1GJ6tnHNo1ROafJA5XwWGTZY35l8LRJWyo7B5yNFDd5fSfG1oLR'
-                            },
-                            enctype: 'multipart/form-data',
-                            url: '/food/',
-                            contentType: false,
-                            processData: false,
-                            type: 'POST',
-                            data: form,
-                            success: function(result) {
-                                if (result.status === 200) {
-                                    Swal.fire("Form Submitted!", "Your message has been sent to us", "success")
-                                } else {
-                                    let errors = ""
-                                    for (var i = 0; i < result.errors.length; i++) {
-                                        errors += `<li>${result.errors[i]}</li>`;
-                                    }
-                                    Swal.fire({
-                                        "icon": "warning",
-                                        "title": "Invalid Form",
-                                        "html": `These fields are either invalid or blank: <ul>${errors}<ul>`
-                                    });
-                                }
-                            },
-                            error: function(err) {
-                                Swal.fire({
-                                    icon: "error",
-                                    title: "Form Submission Failure",
-                                    html: "Something went wrong, please try again later"
-                                })
-                            }
-                        })
-                    }
-                </script>
+                {% include contact-form.html %}
             </div>
 
             <div class="col-md-5 col-sm-7">
