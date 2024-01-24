@@ -402,3 +402,34 @@ permalink: /
     </div>
     <!--end of container-->
 </section>
+{% assign current_date = site.time | date: "%Y-%m-%d" %}
+
+{% for item in site.data.site_message limit:1 %}
+  {% assign release_date = item.release_date | date: "%Y-%m-%d" %}
+  {% assign expiration_date = item.expiration_date | date: "%Y-%m-%d" %}
+
+  {% if current_date >= release_date and current_date <= expiration_date %}
+  <div class="modal-container" data-autoshow="1000">
+    <div class="modal-content section-modal">
+        <div class="feature feature-1 text-center">
+            {% if item.image %}
+            <img alt="Image" class="img-fluid modal-image" src="{{item.image}}" />
+            {% endif %}
+            <div class="feature__body boxed boxed--lg boxed--border">
+                <div class="modal-close modal-close-cross"></div>
+                <div class="text-block">
+                    <h3>{{item.title}}</h3>
+                    <p>
+                        {{item.text}}
+                        {{item.release_date}}
+                        {{item.expiration_date}}
+                    </p>
+                </div>
+
+            </div>
+        </div>
+        <!--end feature-->
+    </div>
+</div>
+{% endif %}
+{% endfor %}

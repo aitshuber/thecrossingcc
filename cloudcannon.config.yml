@@ -21,16 +21,10 @@ properties:
   output: true
   path: _properties
 _inputs:
-  Agent:
-    type: select
-    options:
-      values:
-        - Jeff Landry
-        - Rex Moroux
-        - Tim Skinner
-        - Diana Stephens
-        - Eric Schexnayder
-        - Tim Skinner
+  release_date:
+    type: date
+  expiration_date:
+    type: date
   image-1:
     type: image
   image-2:

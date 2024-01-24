@@ -850,3 +850,8 @@ ul.listing-diamonds {
 	    margin-bottom: 1.85714286em !important; 
 	}
 }
+.modal-image {
+  height: 350px;
+  width: 100%;
+  object-fit: cover;
+}
