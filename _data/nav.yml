@@ -3,10 +3,12 @@
 - label: About
   link: "/#about"
 - label: Food & Bev
-  link: /food.html
+  link: /food
+- label: Pricing
+  link: /pricing
 - label: Gallery
-  link: /gallery.html
+  link: /gallery
 - label: Calendar
-  link: /calendar.html
+  link: /calendar
 - label: Contact
   link: "/#contact"
