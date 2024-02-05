@@ -35,6 +35,8 @@ _inputs:
     type: image
   beverage_banner:
     type: image
+  logo:
+    type: image
   background_image_2:
     type: image
   background_image_3:
