@@ -1,22 +1,24 @@
 ---
 layout: default
 title: The Crossing at Mervine Kahn'
-description: We offer space for large and small wedding ceremonies and receptions, corporate events and small parties! WE offer the most delectable catering and also have a full service bar!
+description: >-
+  We offer space for large and small wedding ceremonies and receptions,
+  corporate events and small parties! WE offer the most delectable catering and
+  also have a full service bar!
 keywords:
 page_banner:
-    - banner_title: "Rustic yet elegant, timeless intrigue.
-      Making memories for over 125 years."
-      button_link: /
-      button_text: Book An Event
-      background_image: ../media/web_app_images/forms/thecrossing.jpg
-    - banner_title: "Rustic yet elegant, timeless intrigue. Making memories for over 125 years."
-      button_link: /
-      button_text: Call to Schedule
-      background_image: ../media/web_app_images/forms/4.jpg
-image_slider: 
-        - image: ../static/thecrossing/images/4.jpg
-        - image: ../static/thecrossing/images/1.jpg
-        - image: ../static/thecrossing/images/2.jpg
+  - banner_title: Rustic yet elegant, timeless intrigue. Making memories for over 125 years.
+    button_link: /#contact
+    button_text: Book An Event
+    background_image: ../media/web_app_images/forms/thecrossing.jpg
+  - banner_title: Rustic yet elegant, timeless intrigue. Making memories for over 125 years.
+    button_link: /
+    button_text: Call to Schedule
+    background_image: ../media/web_app_images/forms/4.jpg
+image_slider:
+  - image: ../static/thecrossing/images/4.jpg
+  - image: ../static/thecrossing/images/1.jpg
+  - image: ../static/thecrossing/images/2.jpg
 permalink: /
 ---
 <section id="home" class="cover height-100 imagebg parallax slider" data-arrows="true" data-paging="true">
@@ -58,7 +60,7 @@ permalink: /
                 <span class="h2">
                     We offer space for large and small wedding ceremonies and receptions, corporate events and small parties! WE offer the most delectable catering and also have a full service bar!
                 </span>
-                <hr class="short">
+                <hr class="short" />
                 <p>
                   {{site.data.company_details.address}}
                     <br class="hidden-xs hidden-sm" /> <a href="tel:{{site.data.company_details.phone}}" class="phone">{{site.data.company_details.phone}}</a>
@@ -69,7 +71,7 @@ permalink: /
     </div>
     <!--end of container-->
 </section>
-<section id="services" class="cover height-50 imagebg parallax" data-overlay="3" id="menu">
+<section id="services" class="cover height-50 imagebg parallax" data-overlay="3">
     <div class="background-image-holder">
         <img alt="background" src="static/thecrossing/images/food.jpg" />
     </div>
@@ -101,8 +103,7 @@ permalink: /
                 {% if counter1 < 4 %}
                     <div class="col-md-4">
                         <div class="text-block">
-                            <h4>{{item.title}} <label
-                                    style="font-size: 13px; font-weight: 600; color: #a94442">{{item.label}}</label></h4>
+                            <h4>{{item.title}} <label style="font-size: 13px; font-weight: 600; color: #a94442">{{item.label}}</label></h4>
                             <p>
                                 
                             </p>
