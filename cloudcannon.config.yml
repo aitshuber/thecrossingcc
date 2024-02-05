@@ -31,6 +31,10 @@ _inputs:
     type: image
   image-3:
     type: image
+  page_banner:
+    type: image
+  beverage_banner:
+    type: image
   background_image_2:
     type: image
   background_image_3:
