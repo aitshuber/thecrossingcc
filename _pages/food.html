@@ -3,12 +3,8 @@ layout: default
 title: The Crossing at Mervine Kahn'
 description: We offer space for large and small wedding ceremonies and receptions, corporate events and small parties! WE offer the most delectable catering and also have a full service bar!
 keywords:
-page_banner:
-     banner_title: "Rustic yet elegant, timeless intrigue.
-     Making memories for over 125 years."
-     button_link: /
-     button_text: Book An Event
-     background_image: ../media/web_app_images/forms/thecrossing.jpg
+page_banner: ../media/web_app_images/forms/thecrossing.jpg
+beverage_banner: ../static/thecrossing/images/restaurant-3.jpg
 image_slider: 
   - image: ../static/thecrossing/images/4.jpg
   - image: ../static/thecrossing/images/1.jpg
@@ -17,12 +13,12 @@ permalink: food
 ---
     <section id="services" class="cover height-50 imagebg parallax" data-overlay="3" id="menu">
         <div class="background-image-holder">
-            <img alt="background" src="../static/thecrossing/images/food.jpg"/>
+            <img alt="background" src="{{page.page_banner}}"/>
         </div>
         <div class="container pos-vertical-center">
             <div class="row">
                 <div class="col-sm-8 col-md-6">
-                    <h1>
+                    <h1 class="editable">
                         Food Menu
                     </h1>
                 </div>
@@ -37,7 +33,7 @@ permalink: food
             <div class="row">
                 <div class="col-md-4">
                     <div class="text-block">
-                        <h3 class="red">Hor d'oeuvres </h3>
+                        <h3 class="red editble">Hor d'oeuvres </h3>
                     </div>
                 </div>
                 
@@ -69,7 +65,7 @@ permalink: food
             <div class="row">
                 <div class="col-md-4">
                     <div class="text-block">
-                        <h3 class="red">Stations</h3>
+                        <h3 class="red editable">Stations</h3>
                     </div>
                 </div>
 
@@ -100,7 +96,7 @@ permalink: food
                 
                 <div class="col-md-4">
                     <div class="text-block">
-                        <h3 class="red">Vegetable, Fruit, Sandwich and Cheese Trays</h3>
+                        <h3 class="red editable">Vegetable, Fruit, Sandwich and Cheese Trays</h3>
                     </div>
                 </div>
                 
@@ -130,7 +126,7 @@ permalink: food
             <div class="row">
                 <div class="col-md-4">
                     <div class="text-block">
-                        <h3 class="red">Soups, Gumbo, Dips and Salads</h3>
+                        <h3 class="red editable">Soups, Gumbo, Dips and Salads</h3>
                     </div>
                 </div>
                 {% for item in site.data.menu %}
@@ -200,7 +196,7 @@ permalink: food
 
     <section id="work" class="cover height-50 imagebg parallax" data-overlay="1">
         <div class="background-image-holder">
-            <img alt="background" src="../static/thecrossing/images/restaurant-3.jpg"/>
+            <img alt="background" src="{{page.beverage_banner}}"/>
         </div>
         <div class="container pos-vertical-center">
             <div class="row">
@@ -288,36 +284,5 @@ permalink: food
         </ul>
     </section>
     <a name="Contact"></a>
-    <section id="contact" class="imageblock switchable feature-large space--lg">
-        <div class="container">
-            <div class="row">
-                <div class="col-sm-5 col-sm-offset-1">
-                    
-                    
-             
-                    
-                   {% include contact-form.html %}
-                </div>
-
-                <div class="col-md-5 col-sm-7">
-                   <h3><address>{{site.data.company_details.address}}</address>
-                   </h3>
-                   <p class="lead">
-                       E:
-                       <a href="mailto:{{site.data.company_details.email}}">{{site.data.company_details.email}}</a>
-                       <br /> P: <a href="tel:{{site.data.company_details.phone}}" class="phone">{{site.data.company_details.phone}}</a>
-                   </p>
-                   <p class="lead">
-                       Give us a call or drop by anytime, we endeavour to answer all enquiries within 24 hours on
-                       business days.
-                   </p>
-                   <p class="lead">
-                       Call to make an appointment.
-                   </p>
-                </div>
-            </div>
-            <!--end of row-->
-        </div>
-        <!--end of container-->
-    </section>
+   {% include contact.html %}
 

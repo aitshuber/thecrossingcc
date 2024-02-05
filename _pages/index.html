@@ -54,10 +54,10 @@ permalink: /
     <div class="container">
         <div class="row">
             <div class="col-sm-12 col-md-10">
-                <span class="h2">
+                <span class="h2 editable">
                     The beautifully restored, historic Mervine Kahn, with its vintage appeal, offers over 13,700 square feet of rustic beauty for your special event. Delicious catering and bridal suite options are available along with Bridal Showers and other party options.
                 </span>
-                <span class="h2">
+                <span class="h2 editable">
                     We offer space for large and small wedding ceremonies and receptions, corporate events and small parties! WE offer the most delectable catering and also have a full service bar!
                 </span>
                 <hr class="short" />
@@ -354,34 +354,8 @@ permalink: /
 </section>
 <!--Contact Form-->
 <a name="Contact"></a>
-<section id="contact" class="imageblock switchable feature-large space--xs">
-    <div class="container">
-        <div class="row">
-            <div class="col-sm-5 col-sm-offset-1">
-                {% include contact-form.html %}
-            </div>
+ {% include contact.html %}
 
-            <div class="col-md-5 col-sm-7">
-                <h3><address>{{site.data.company_details.address}}</address>
-                </h3>
-                <p class="lead">
-                    E:
-                    <a href="mailto:{{site.data.company_details.email}}">{{site.data.company_details.email}}</a>
-                    <br /> P: <a href="tel:{{site.data.company_details.phone}}" class="phone">{{site.data.company_details.phone}}</a>
-                </p>
-                <p class="lead">
-                    Give us a call or drop by anytime, we endeavour to answer all enquiries within 24 hours on
-                    business days.
-                </p>
-                <p class="lead">
-                    Call to make an appointment.
-                </p>
-            </div>
-        </div>
-        <!--end of row-->
-    </div>
-    <!--end of container-->
-</section>
 <!--Instashow-->
 <section class="text-center space--xs">
     <div class="container">

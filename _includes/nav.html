@@ -7,9 +7,9 @@
 
 					<a href="/">
 						<img class="logo logo-dark" alt="logo"
-							 src="static/thecrossing/images/The-Crossing-Logo-white.png"/>
+							 src="{{site.data.company_details.logo_white}}"/>
 						<img class="logo logo-light" alt="logo"
-							 src="static/thecrossing/images/The-Crossing-Logo-white.png"/>
+							 src="{{site.data.company_details.logo_white}}"/>
 					</a>
 
 				</div>
@@ -39,7 +39,7 @@
 			</li>
 			{% endfor %}
 			<li>
-				<a class="btn btn--primary type--uppercase inner-link" href="tel:3372074600">
+				<a class="btn btn--primary type--uppercase inner-link" href="tel:{{site.data.company_details.phone}}">
 							<span class="btn__text">
 								Book an Event
 							</span>
@@ -51,16 +51,12 @@
 	<div class="side-menu__module pos-bottom pos-absolute col-xs-12 text-right">
 		<ul class="social-list list-inline text-right list--hover">
 
+			{% for item in site.data.company_details.social %}
 			<li>
-				<a href="#">
-					<a href="https://en-gb.facebook.com/pg/thecrossingatmk/posts/" class="fa fa-facebook"></a>
-				</a>
+					<a href="{{item.link}}" class="fa fa-{{item.icon}}"></a>
 			</li>
-			<li>
-				<a href="#">
-					<a href="#" class="fa fa-instagram"></a>
-				</a>
-			</li>
+			{% endfor %}
+			
 		</ul>
 	</div>
 </div>

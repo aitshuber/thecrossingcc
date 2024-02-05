@@ -15,7 +15,7 @@ permalink: pricing
         <div class="container pos-vertical-center">
             <div class="row">
                 <div class="col-sm-8 col-md-6">
-                    <h1 class="editable">
+                    <h1>
                         {{page.banner_title}}
                     </h1>
                 </div>
@@ -92,33 +92,4 @@ permalink: pricing
 
   
     <a name="Contact"></a>
-    <section id="contact" class="imageblock switchable feature-large">
-        <div class="container">
-            <div class="row">
-                <div class="col-sm-5 col-sm-offset-1">
-      
-                   {% include contact-form.html %}
-                </div>
-
-                <div class="col-md-5 col-sm-7">
-                   <h3><address>{{site.data.company_details.address}}</address>
-                   </h3>
-                   <p class="lead">
-                       E:
-                       <a href="mailto:{{site.data.company_details.email}}">{{site.data.company_details.email}}</a>
-                       <br /> P: <a href="tel:{{site.data.company_details.phone}}" class="phone">{{site.data.company_details.phone}}</a>
-                   </p>
-                   <p class="lead">
-                       Give us a call or drop by anytime, we endeavour to answer all enquiries within 24 hours on
-                       business days.
-                   </p>
-                   <p class="lead">
-                       Call to make an appointment.
-                   </p>
-                </div>
-            </div>
-            <!--end of row-->
-        </div>
-        <!--end of container-->
-    </section>
-
+  {% include contact.html %}

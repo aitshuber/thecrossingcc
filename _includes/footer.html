@@ -9,26 +9,12 @@
 			</div>
 			<div class="col-sm-6 text-right text-center-xs">
 				<ul class="social-list list-inline">
+					{% for item in site.data.company_details.social %}
 					<li>
-						<a href="#">
-							<a href="#" class="fa fa-google"></a>
-						</a>
+							<a href="{{item.link}}" class="fa fa-{{item.icon}}"></a>
 					</li>
-					<li>
-						<a href="#">
-							<a href="#" class="fa fa-twitter"></a>
-						</a>
-					</li>
-					<li>
-						<a href="#">
-							<a href="#" class="fa fa-facebook"></a>
-						</a>
-					</li>
-					<li>
-						<a href="#">
-							<a href="#" class="fa fa-instagram"></a>
-						</a>
-					</li>
+					{% endfor %}
+					
 				</ul>
 			</div>
 		</div>

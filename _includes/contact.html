@@ -1,0 +1,55 @@
+<section id="contact" class="imageblock switchable feature-large space--xs">
+	<div class="container">
+		<div class="row">
+			<div class="col-sm-5 col-sm-offset-1">
+			  <form  action="https://formspree.io/f/xrgnbvee"
+				 method="POST">
+						  <div class="col-sm-12">
+							<label>Your Name:</label>
+							<input type="text" name="name" class="validate-required" required id="id_name">
+							
+						  </div>
+						  <div class="col-sm-12">
+							<label>Email Address:</label>
+							<input type="email" name="email" class="validate-required" required id="id_email">
+							
+						  </div>
+						  <div class="col-sm-12">
+							<label>Phone Number</label>
+							<input type="tel" name="Phone" class="validate-required" required id="id_phone">
+							
+						  </div>
+						  <div class="col-sm-12">
+							<label>Message:</label>
+							<textarea name="message" cols="40" rows="10" class="validate-required" required id="id_message">
+			  </textarea>
+							
+						  </div>
+						  <div class="col-sm-12">
+							<button style="transform: scale(1) !important;" type="submit" class="g-recaptcha btn btn--primary">Send Form</button>
+						  </div>
+						</form>
+			   
+			</div>
+
+			<div class="col-md-5 col-sm-7">
+				<h3><address>{{site.data.company_details.address}}</address>
+				</h3>
+				<p class="lead">
+					E:
+					<a href="mailto:{{site.data.company_details.email}}">{{site.data.company_details.email}}</a>
+					<br /> P: <a href="tel:{{site.data.company_details.phone}}" class="phone">{{site.data.company_details.phone}}</a>
+				</p>
+				<p class="lead editable">
+					Give us a call or drop by anytime, we endeavour to answer all enquiries within 24 hours on
+					business days.
+				</p>
+				<p class="lead editable">
+					Call to make an appointment.
+				</p>
+			</div>
+		</div>
+		<!--end of row-->
+	</div>
+	<!--end of container-->
+</section>
