@@ -25,6 +25,10 @@ _inputs:
     type: date
   expiration_date:
     type: date
+  start:
+    type: date
+  end:
+    type: date
   image-1:
     type: image
   image-2:
