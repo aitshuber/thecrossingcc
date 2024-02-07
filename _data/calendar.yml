@@ -70,3 +70,9 @@
   backgroundColor: '#a2a1d2'
   borderColor: '#ad85cc'
   allDay: true
+- title: Carlos' Birthday
+  start: 2024-09-01 00:00:00
+  end: 2024-03-01 00:00:00
+  backgroundColor: '#3245ca'
+  borderColor: '#3245ca'
+  allDay: true
