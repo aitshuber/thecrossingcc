@@ -34,11 +34,12 @@ _inputs:
     type: date
   expiration_date:
     type: date
+  start: ""
   start:
     type: datetime
+  end: ""
   end:
     type: datetime
-  datetime: ""
   image-1:
     type: image
   image-2:

@@ -26,8 +26,8 @@ document.addEventListener('DOMContentLoaded', function() {
 {% for item in site.data.calendar %}
 		 {
 	title: "{{item.title}}",
-	start: "{{item.start}}",
-	end: "{{item.end}}",
+	start: "{{item.start | date_to_xmlschema}}",
+	end: "{{item.end | date_to_xmlschema}}",
 	backgroundColor: "{{item.backgroundColor}}",
 	borderColor: "{{item.borderColor}}",
 	allDay: {{item.allDay}}
