@@ -77,8 +77,14 @@
   borderColor: '#b0bad2'
   allDay: true
 - title: Bank Rehearsal Dinner
-  start: '2024-03-01T00:00:00'
-  end: '2024-03-01T00:00:00'
+  start: 2024-03-01 00:00:00
+  end: 2024-03-01 00:00:00
   backgroundColor: '#a2a1d2'
   borderColor: '#ad85cc'
+  allDay: true
+- title: Test Item
+  start: 2024-03-01 00:00:00
+  end: 2024-03-01 00:00:00
+  backgroundColor: '#000000'
+  borderColor: '#000000'
   allDay: true
