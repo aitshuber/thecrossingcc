@@ -26,9 +26,9 @@ _inputs:
   expiration_date:
     type: date
   start:
-    type: date
+    type: datetime
   end:
-    type: date
+    type: datetime
   image-1:
     type: image
   image-2:
