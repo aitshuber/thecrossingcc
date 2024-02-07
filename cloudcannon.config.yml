@@ -38,6 +38,7 @@ _inputs:
     type: datetime
   end:
     type: datetime
+  datetime: ""
   image-1:
     type: image
   image-2:
