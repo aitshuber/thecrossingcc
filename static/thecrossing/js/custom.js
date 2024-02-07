@@ -28,8 +28,8 @@ document.addEventListener('DOMContentLoaded', function() {
 	title: "{{item.title}}",
 	start: "{{item.start | date_to_xmlschema}}",
 	end: "{{item.end | date_to_xmlschema}}",
-	backgroundColor: "{{item.backgroundColor}}",
-	borderColor: "{{item.borderColor}}",
+	backgroundColor: "{% if item.backgroundColor == '' %}#000{% else %}{{item.backgroundColor}}{% endif %}",
+	borderColor: "{% if item.borderColor == '' %}#000{% else %}{{item.borderColor}}{% endif %}",
 	allDay: {{item.allDay}}
 },
 {% endfor %}
