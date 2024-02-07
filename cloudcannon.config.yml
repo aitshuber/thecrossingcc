@@ -21,6 +21,15 @@ properties:
   output: true
   path: _properties
 _inputs:
+  menu_category:
+    type: select
+    options:
+      values:
+        - Hor d'oeuvres
+        - Stations
+        - Trays
+        - Soup, Salads, and Dips
+        - Entree
   release_date:
     type: date
   expiration_date:
