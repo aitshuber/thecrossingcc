@@ -41,22 +41,22 @@ permalink: food
                         <h3 class="red editble">Hor d'oeuvres </h3>
                     </div>
                 </div>
-                
+
                    {% for item in site.data.menu %}
-                    {% if item.category == "Hor d'oeuvres" %}
+                    {% if item.menu_category == "Hor d'oeuvres" %}
                         <div class="col-md-4">
                             <div class="text-block">
                                 <h4>{{item.title}} <label style="font-size: 13px; font-weight: 600; color: #a94442">{{item.label}}</label></h4>
                                 <p>
-                                    
+
                                 </p>
                             </div>
                         </div>
                         {% endif %}
                     {% endfor %}
-                
-                 
-                
+
+
+
             </div>
             <!--end of row-->
         </div>
@@ -77,19 +77,19 @@ permalink: food
 
 
                     {% for item in site.data.menu %}
-                    {% if item.category == "Stations" %}
+                    {% if item.menu_category == "Stations" %}
                         <div class="col-md-4">
                             <div class="text-block">
                                 <h4>{{item.title}}</h4>
                                 <p>
-                                    
+
                                 </p>
                             </div>
                         </div>
                     {% endif %}
                     {% endfor %}
-                
-                
+
+
             </div>
             <!--end of row-->
         </div>
@@ -99,7 +99,7 @@ permalink: food
     <section>
         <div class="container">
             <div class="row">
-                
+
                 <div class="col-md-4">
                     <div class="text-block">
                         <h3 class="red editable">
@@ -107,22 +107,22 @@ permalink: food
                         </h3>
                     </div>
                 </div>
-                
+
                 {% for item in site.data.menu %}
-                {% if item.category == "Trays" %}
+                {% if item.menu_category == "Trays" %}
                         <div class="col-md-4">
                             <div class="text-block">
                                 <h4>{{item.title}}</h4>
                                 <p>
-                                    
+
                                 </p>
                             </div>
                         </div>
-                    
+
                 {% endif %}
                 {% endfor %}
-                    
-                
+
+
             </div>
             <!--end of row-->
         </div>
@@ -138,21 +138,21 @@ permalink: food
                     </div>
                 </div>
                 {% for item in site.data.menu %}
-                {% if item.category == "Soup, Salads, and Dips" %}
-                   
+                {% if item.menu_category == "Soup, Salads, and Dips" %}
+
                         <div class="col-md-4">
                             <div class="text-block">
                                 <h4>{{item.title}}</h4>
                                 <p>
-                                    
+
                                 </p>
                             </div>
                         </div>
                     {% endif %}
                     {% endfor %}
-                
-                    
-                
+
+
+
             </div>
             <!--end of row-->
         </div>
@@ -169,18 +169,18 @@ permalink: food
                     </div>
                 </div>
                     {% for item in site.data.menu %}
-                    {% if item.category == "Entree" %}
+                    {% if item.menu_category == "Entree" %}
                         <div class="col-md-4">
                             <div class="text-block">
                                 <h4>{{item.title}}</h4>
                                 <p>
-                                    
+
                                 </p>
                             </div>
                         </div>
                     {% endif %}
                     {% endfor %}
-                
+
             </div>
             <!--end of row-->
         </div>
@@ -288,7 +288,7 @@ permalink: food
                 <img alt="Image" src="{{item.image}}" />
             </li>
             {% endfor %}
-            
+
         </ul>
     </section>
     <a name="Contact"></a>
