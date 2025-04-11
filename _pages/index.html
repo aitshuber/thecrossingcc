@@ -98,23 +98,23 @@ permalink: /
             </div>
             {% assign counter1 = 0 %}
                {% for item in site.data.menu %}
-                {% if item.category == "Hor d'oeuvres" %}
+                {% if item.menu_category == "Hor d'oeuvres" %}
                 {% assign counter1 = counter1 | plus: 1 %}
                 {% if counter1 < 4 %}
                     <div class="col-md-4">
                         <div class="text-block">
                             <h4>{{item.title}} <label style="font-size: 13px; font-weight: 600; color: #a94442">{{item.label}}</label></h4>
                             <p>
-                                
+
                             </p>
                         </div>
                     </div>
                     {% endif %}
                     {% endif %}
                 {% endfor %}
-            
-             
-            
+
+
+
         </div>
         <!--end of row-->
     </div>
@@ -133,22 +133,22 @@ permalink: /
 
             {% assign counter2 = 0 %}
                 {% for item in site.data.menu %}
-                {% if item.category == "Stations" %}
+                {% if item.menu_category == "Stations" %}
                 {% assign counter2 = counter2 | plus: 1 %}
                 {% if counter2 < 3 %}
                     <div class="col-md-4">
                         <div class="text-block">
                             <h4>{{item.title}}</h4>
                             <p>
-                                
+
                             </p>
                         </div>
                     </div>
                     {% endif %}
                 {% endif %}
                 {% endfor %}
-            
-            
+
+
         </div>
         <!--end of row-->
     </div>
@@ -158,7 +158,7 @@ permalink: /
 <section>
     <div class="container">
         <div class="row">
-            
+
             <div class="col-md-4">
                 <div class="text-block">
                     <h3 class="red">Vegetable, Fruit, Sandwich and Cheese Trays</h3>
@@ -166,22 +166,22 @@ permalink: /
             </div>
             {% assign counter3 = 0 %}
             {% for item in site.data.menu %}
-            {% if item.category == "Trays" %}
+            {% if item.menu_category == "Trays" %}
             {% assign counter3 = counter3 | plus: 1 %}
             {% if counter3 < 5 %}
                     <div class="col-md-4">
                         <div class="text-block">
                             <h4>{{item.title}}</h4>
                             <p>
-                                
+
                             </p>
                         </div>
                     </div>
                 {% endif %}
             {% endif %}
             {% endfor %}
-                
-            
+
+
         </div>
         <!--end of row-->
     </div>
@@ -198,23 +198,23 @@ permalink: /
             </div>
             {% assign counter4 = 0 %}
             {% for item in site.data.menu %}
-            {% if item.category == "Soup, Salads, and Dips" %}
+            {% if item.menu_category == "Soup, Salads, and Dips" %}
                {% assign counter4 = counter4 | plus: 1 %}
                {% if counter4 < 6 %}
                     <div class="col-md-4">
                         <div class="text-block">
                             <h4>{{item.title}}</h4>
                             <p>
-                                
+
                             </p>
                         </div>
                     </div>
                     {% endif %}
                 {% endif %}
                 {% endfor %}
-            
-                
-            
+
+
+
         </div>
         <!--end of row-->
     </div>
@@ -232,21 +232,21 @@ permalink: /
             </div>
             {% assign counter5 = 0 %}
                 {% for item in site.data.menu %}
-                {% if item.category == "Entree" %}
+                {% if item.menu_category == "Entree" %}
                 {% assign counter5 = counter5 | plus: 1 %}
                    {% if counter5 < 6 %}
                     <div class="col-md-4">
                         <div class="text-block">
                             <h4>{{item.title}}</h4>
                             <p>
-                                
+
                             </p>
                         </div>
                     </div>
                     {% endif %}
                 {% endif %}
                 {% endfor %}
-            
+
         </div>
         <!--end of row-->
     </div>
@@ -349,7 +349,7 @@ permalink: /
             <img alt="Image" src="{{item.image}}" />
         </li>
         {% endfor %}
-       
+
     </ul>
 </section>
 <!--Contact Form-->
