@@ -1,8 +1,13 @@
 ---
 layout: default
-title: The Crossing at Mervine Kahn'
-description: We offer space for large and small wedding ceremonies and receptions, corporate events and small parties! WE offer the most delectable catering and also have a full service bar!
-keywords:
+title: The Crossing at Mervine Kahn
+description: >-
+  We offer space for large and small wedding ceremonies and receptions,
+  corporate events and small parties! WE offer the most delectable catering and
+  also have a full service bar!
+keywords: >-
+  catering, on-site catering, off-site catering, receptions, weddings, large
+  events, small events, bridal portraits
 page_banner: ../media/web_app_images/forms/thecrossing.jpg
 beverage_banner: ../static/thecrossing/images/restaurant-3.jpg
 image_slider:
@@ -11,9 +16,9 @@ image_slider:
   - image: ../static/thecrossing/images/2.jpg
 permalink: food
 ---
-    <section id="services" class="cover height-50 imagebg parallax" data-overlay="3" id="menu">
+<section id="services" class="cover height-50 imagebg parallax" data-overlay="3">
         <div class="background-image-holder">
-            <img alt="background" src="{{page.page_banner}}"/>
+            <img alt="background" src="{{page.page_banner}}" />
         </div>
         <div class="container pos-vertical-center">
             <div class="row">
@@ -41,8 +46,7 @@ permalink: food
                     {% if item.menu_category == "Hor d'oeuvres" %}
                         <div class="col-md-4">
                             <div class="text-block">
-                                <h4>{{item.title}} <label
-                                        style="font-size: 13px; font-weight: 600; color: #a94442">{{item.label}}</label></h4>
+                                <h4>{{item.title}} <label style="font-size: 13px; font-weight: 600; color: #a94442">{{item.label}}</label></h4>
                                 <p>
 
                                 </p>
@@ -196,7 +200,7 @@ permalink: food
 
     <section id="work" class="cover height-50 imagebg parallax" data-overlay="1">
         <div class="background-image-holder">
-            <img alt="background" src="{{page.beverage_banner}}"/>
+            <img alt="background" src="{{page.beverage_banner}}" />
         </div>
         <div class="container pos-vertical-center">
             <div class="row">
@@ -277,7 +281,7 @@ permalink: food
         <ul class="slides">
             {% for item in page.image_slider %}
             <li>
-                <img alt="Image" src="{{item.image}}"/>
+                <img alt="Image" src="{{item.image}}" />
             </li>
             {% endfor %}
 
