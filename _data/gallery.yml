@@ -1,46 +1,6 @@
-- filter: Bridal Suite
-  title: Kitchen Table Area
-  image: /media/web_app_images/forms/bridal%20suite%208.jpg
-- filter: Bridal Suite
-  title: Sitting Area
-  image: /media/web_app_images/forms/couch%20area%202.jpg
-- filter: Bridal Suite
-  title: Kitchenette
-  image: /media/web_app_images/forms/Kitchenette.jpg
-- filter: Bridal Suite
-  title: Sitting Area
-  image: /media/web_app_images/forms/couch%20area.jpg
-- filter: Bridal Suite
-  title: Salon Chairs
-  image: /media/web_app_images/forms/bridal%20suite%205.jpg
-- filter: Bridal Suite
-  title: Dressing Area
-  image: /media/web_app_images/forms/Dressing%20area.jpg
 - filter: Food
   title: Food Venue
   image: ../media/web_app_images/forms/food.jpg
-- filter: Food
-  title: Pastalaya
-  image: /media/web_app_images/forms/78783018_498432591022963_42730908800778240_n.jpg
-- filter: Food
-  title: Sliced Brisket
-  image: >-
-    /media/web_app_images/forms/78981229_2602479736512197_9011943050414391296_n.jpg
-- filter: Food
-  title: Grilled Vegetables
-  image: >-
-    /media/web_app_images/forms/79284649_456813081919430_5626713436172845056_n.jpg
-- filter: Food
-  title: Shrimp Cocktail
-  image: >-
-    /media/web_app_images/forms/78850078_607107196763806_8424978551861673984_n.jpg
-- filter: Food
-  title: Meat Pies
-  image: >-
-    /media/web_app_images/forms/74475675_456370678395888_4801394126891253760_n.jpg
-- filter: Food
-  title: Fruit Tray
-  image: /media/web_app_images/forms/W_0536.jpg
 - filter: Bar
   title: Bar Name
   image: ../media/web_app_images/forms/2.jpg
