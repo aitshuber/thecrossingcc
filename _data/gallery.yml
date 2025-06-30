@@ -1,6 +1,3 @@
-- filter: ''
-  title: ''
-  image: ''
 - filter: Bridal Suite
   title: Kitchen Table Area
   image: /media/web_app_images/forms/bridal%20suite%208.jpg
@@ -47,6 +44,3 @@
 - filter: Bar
   title: Bar Name
   image: ../media/web_app_images/forms/2.jpg
-- filter: ''
-  title: ''
-  image: ''
