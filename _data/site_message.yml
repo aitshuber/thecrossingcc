@@ -1,7 +1,5 @@
-- title: Test
-  text: >-
-    Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
-    tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam.
-  image: ../static/thecrossing/images/4.jpg"
+- title: 50% off Facility Fees
+  text: All Bookings for July & August Weddings Receive 50% off facility fees!
+  image: /static/thecrossing/images/wedding-50-off.jpg
   release_date: 2025-12-18 00:00:00
   expiration_date:
