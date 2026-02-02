@@ -52,6 +52,8 @@ _inputs:
     type: image
   logo:
     type: image
+  background_image:
+    type: image
   background_image_2:
     type: image
   background_image_3:
