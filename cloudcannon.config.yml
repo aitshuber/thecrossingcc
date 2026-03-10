@@ -61,6 +61,31 @@ _inputs:
     cascade: true
   code:
     type: code
+    options:
+      min_visible_lines: 30
+      max_visible_lines: 60
+      tab_size: 2
+      theme: basic_dark
+      show_gutter: true
+      syntax:
+      empty_type:
+      required:
+      required_message:
+      min_length:
+      min_length_message:
+      max_length:
+      max_length_message:
+      pattern:
+      pattern_message:
+      min_graphemes:
+      min_graphemes_message:
+      max_graphemes:
+      max_graphemes_message:
+      min_words:
+      min_words_message:
+      max_words:
+      max_words_message:
+      locale:
     cascade: true
 _editables:
   block:
