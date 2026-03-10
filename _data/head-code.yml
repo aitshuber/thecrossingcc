@@ -1,0 +1,62 @@
+code: >-
+    <!-- GEO-Optimized Meta + Structured Data for The Crossing MK -->
+    <title>The Crossing MK | Wedding & Event Venue in Rayne, LA</title>
+    <meta name="description" content="The Crossing MK is a premier wedding and event venue in Rayne, LA offering indoor event spaces, full-service wedding packages, and corporate events.">
+    <meta name="keywords" content="The Crossing MK Rayne LA, wedding venue Rayne LA, event venue Louisiana, corporate events, indoor events, event space rental">
+    <meta name="author" content="The Crossing MK Rayne">
+
+    <!-- Open Graph / Social -->
+    <meta property="og:title" content="The Crossing MK | Wedding & Event Venue in Rayne, LA">
+    <meta property="og:description" content="Host your weddings, corporate events, or private parties at The Crossing MK, a beautiful indoor venue in Rayne, Louisiana.">
+    <meta property="og:image" content="https://thecrossingmk.com/images/venue-overview.jpg">
+    <meta property="og:type" content="event_venue">
+    <meta property="og:url" content="https://thecrossingmk.com">
+    <meta property="og:site_name" content="The Crossing MK">
+    <meta property="og:locale" content="en_US">
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:title" content="The Crossing MK | Wedding & Event Venue in Rayne, LA">
+    <meta name="twitter:description" content="Premier indoor event venue in Rayne, LA for weddings, corporate events, and private parties.">
+    <meta name="twitter:image" content="https://thecrossingmk.com/images/venue-overview.jpg">
+
+    <!-- EventVenue Structured Data -->
+    <script type="application/ld+json">
+    {
+    "@context": "https://schema.org",
+    "@type": "EventVenue",
+    "name": "The Crossing MK",
+    "image": "https://thecrossingmk.com/images/venue-overview.jpg",
+    "address": {
+    "@type": "PostalAddress",
+    "streetAddress": "200 Celebration Ln",
+    "addressLocality": "Rayne",
+    "addressRegion": "LA",
+    "postalCode": "70578",
+    "addressCountry": "US"
+    },
+    "geo": {
+    "@type": "GeoCoordinates",
+    "latitude": 30.2475,
+    "longitude": -92.3038
+    },
+    "url": "https://thecrossingmk.com",
+    "telephone": "(337) 207-4600",
+    "openingHours": "Mo-Su 08:00-22:00",
+    "priceRange": "$$$",
+    "event": [
+    {
+    "@type": "Event",
+    "name": "Weddings",
+    "description": "Full-service wedding packages with indoor and outdoor options",
+    "eventAttendanceMode": "https://schema.org/OfflineEventAttendanceMode",
+    "eventStatus": "https://schema.org/EventScheduled"
+    },
+    {
+    "@type": "Event",
+    "name": "Corporate Events",
+    "description": "Professional event planning for corporate meetings and retreats",
+    "eventAttendanceMode": "https://schema.org/OfflineEventAttendanceMode",
+    "eventStatus": "https://schema.org/EventScheduled"
+    }
+    ]
+    }
+    </script>
